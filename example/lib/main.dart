@@ -198,7 +198,7 @@ class _MyHomePageState extends State<MyHomePage> {
                   ),
                   child: Container(
                     decoration: BoxDecoration(
-                      color: Theme.of(context).bottomAppBarColor,
+                      color: Theme.of(context).appBarTheme.backgroundColor,
                       borderRadius: BorderRadius.circular(8.0),
                     ),
                     padding: const EdgeInsets.all(16.0),
