@@ -170,7 +170,7 @@ class _MyHomePageState extends State<MyHomePage> {
                   : ElevatedButton(
                       onPressed: () => onClick(loadImage),
                       style: ButtonStyle(
-                        padding: MaterialStateProperty.all(
+                        padding: WidgetStateProperty.all(
                           const EdgeInsets.all(8.0),
                         ),
                       ),
@@ -238,7 +238,7 @@ class _MyHomePageState extends State<MyHomePage> {
                   child: ElevatedButton(
                     onPressed: loading ? null : () => onClick(doSignedUpload),
                     style: ButtonStyle(
-                      padding: MaterialStateProperty.all(
+                      padding: WidgetStateProperty.all(
                         const EdgeInsets.all(16.0),
                       ),
                     ),
@@ -262,7 +262,7 @@ class _MyHomePageState extends State<MyHomePage> {
                     onPressed: loading ? null : () => onClick(doUnsignedUpload),
                     style: ButtonStyle(
                       padding:
-                          MaterialStateProperty.all(const EdgeInsets.all(16.0)),
+                          WidgetStateProperty.all(const EdgeInsets.all(16.0)),
                     ),
                     child: const Text(
                       'Unsigned upload',
